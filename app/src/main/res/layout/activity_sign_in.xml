@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+
+   >
+
+
+    <EditText
+        android:id="@+id/tv_signin_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40ffffff"
+        android:hint="请输入账号"
+        android:textSize="23sp"
+        android:layout_above="@id/tv_signin_password"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        />
+    <EditText
+        android:id="@+id/tv_signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40ffffff"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="23sp"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/btn_signin_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@id/tv_signin_password"
+        android:layout_marginTop="40dp"
+        android:text="确定"
+        android:textSize="23sp"
+        />
+
+    <Button
+        android:id="@+id/btn_signin_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@id/btn_signin_post"
+        android:layout_marginTop="15dp"
+        android:text="手机注册"
+        android:textSize="23sp"
+        android:textColor="#ffffff"
+        android:background="#00000000"
+        />
+
+</RelativeLayout>

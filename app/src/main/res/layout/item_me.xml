@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_meitem">
+
+    <ImageView
+        android:id="@+id/iv_me_bg"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@mipmap/order_bg"
+        android:scaleType="centerCrop"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="餐厅名字"
+        android:layout_toRightOf="@id/iv_me_bg"
+        android:layout_alignTop="@id/iv_me_bg"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:id="@+id/tv_meitem_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单描述"
+        android:layout_below="@id/tv_meitem_name"
+        android:layout_alignLeft="@id/tv_meitem_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_meitem_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX元"
+        android:textColor="#E2AB88"
+        android:layout_alignLeft="@id/tv_meitem_des"
+        android:layout_alignBottom="@id/iv_me_bg"
+        />
+
+
+</RelativeLayout>

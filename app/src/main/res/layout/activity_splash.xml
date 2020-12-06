@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_splash_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_splash_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过10"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/selector_splash_button"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="7dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_splash_pagenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/3"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:textColor="#e0ffffff"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_above="@+id/ll_main_buttons"
+        android:id="@+id/vp_main_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_main_food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/food_unselect"
+            android:text="食物大厅"
+            />
+        <Button
+            android:id="@+id/btn_main_communication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/communication_unselected"
+            android:text="心得交流"
+            />
+        <Button
+            android:id="@+id/btn_main_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableTop="@mipmap/me_unselected"
+            android:text="我的"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

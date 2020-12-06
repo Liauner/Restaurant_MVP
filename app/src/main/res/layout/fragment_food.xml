@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_food_count"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="23sp"
+        android:textColor="#CB4A00"
+        android:gravity="center"
+        android:text="数量:0"
+        />
+        <TextView
+            android:id="@+id/tv_food_price"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:background="#CB4A00"
+            android:textColor="#ffffff"
+            android:text="0元"/>
+        <Button
+            android:id="@+id/btn_food_pay"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:background="#CB4A00"
+            android:textColor="#ffffff"
+            android:text="立即支付"/>
+
+    </LinearLayout>
+    <com.lia.yilirestaurant.refresh.SwipeRefreshLayout
+        android:id="@+id/srl_food"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_food">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_food_lsitview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.lia.yilirestaurant.refresh.SwipeRefreshLayout>
+
+
+</RelativeLayout>

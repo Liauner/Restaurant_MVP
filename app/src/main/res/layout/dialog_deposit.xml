@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="10dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_deposit_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@mipmap/money2"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/et_deposit_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入充值金额"
+            android:layout_toRightOf="@id/tv_deposit_sign"
+            android:textSize="28sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_deposit_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值"
+        android:background="@drawable/selector_deposit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_deposit"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>
